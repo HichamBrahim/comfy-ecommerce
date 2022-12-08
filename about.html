@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy-About</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <!-- mobile menu -->
+    <nav class="overlay absolute z-2 left-0 top-0 w-full h-full bg-black_50 hidden duration-300 md:hidden">
+        <ul class="menu flex flex-col  fixed z-3 w-4/5 h-1002 rounded left-10% top-2.5vh space-y-6 bg-white text-xl tracking-wider p-16 md:w-1/2">
+            <div class="close absolute text-4xl text-clr_grey_5 right-4 top-2 cursor-pointer"><i class="fas fa-times"></i></div>
+            <li><a  class="flex items-center gap-6"href="index.html"><i class="fas fa-home fa-fw text-clr_grey_5"></i><span>Home</span></a></li>
+            <li><a class="flex items-center gap-6" href="products.html"><i class="fas fa-couch fa-fw text-clr_grey_5"></i><span>Products</span></a></li>
+            <li><a  class="flex items-center gap-6"href="about.html"><i class="fas fa-book fa-fw text-clr_grey_5"></i><span>About</span></a></li>
+        </ul>
+    </nav>
+
+        <!-- shopping Cart-->    
+        <div class="cart-overlay absolute left-0 top-0 bg-black_50 z-2 h-full w-full scale-0"></div>
+        <div class="shopping-cart p-4 fixed right-0 translate-x-full top-0 h-screen w-full bg-grey z-3 overflow-y-scroll md:w-96">
+            <header>
+                <div class="close absolute text-4xl text-clr_grey_5 left-3 top-2 cursor-pointer"><i class="fas fa-times"></i></div>
+                <h2 class="text-3xl text-clr_grey_1 mt-8 text-center font-ff">Your Bag</h2>
+            </header>
+            <main class="cart-container space-y-4 min-h-57">
+                <div class="item mt-6 flex items-center gap-5">
+                        <img class="rounded max-w-75" src="images/9.jpg" alt="">
+                        <div class="infos flex-1">
+                            <h4>Utopia Sofa</h4>
+                            <span class="price">$39.95</span>
+                            <div class="remove text-clr-grey-5 text-clr_grey_5">remove</div>
+                        </div>
+                        <div class="update flex flex-col items-center">
+                            <button class="increase-btn text-clr_primary_5"><i class="fas fa-chevron-up"></i></button>
+                            <span class="number-items">0</span>
+                            <button class="decrease-btn text-clr_primary_5"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                </div>
+            </main>
+            <footer class="mt-10">
+                    <h2 class="total text-2xl tracking-wider font-ff text-center">Total :$49.94</h2>
+                    <a href="products.html" class="all-btn w-4/5 py-1 rounded bg-clr_primary_5 text-white text-md font-normal text-center block tracking-wider mx-auto mt-6 hover:bg-clr_primary_7 hover:text-black duration-300">CHECKOUT</a>
+            </footer>
+        </div>
+            
+    <header class="header">
+        <div class="container m-auto pt-2 px-6 text-clr_grey_1 flex items-center justify-between">
+            <button class="menu-btn block text-2xl p-1 px-5 rounded-full text-white bg-clr_primary_5 md:hidden"><i class="fas fa-bars"></i></button>
+            <nav class="menu nav hidden md:block">
+                <ul class="flex space-x-10 text-xl tracking-wider md:w-1/2">
+                    <li><a class="duration-300 hover:text-clr_primary_5" href="index.html">Home</a></li>
+                    <li><a class="duration-300 hover:text-clr_primary_5" href="products.html">Products</a></li>
+                    <li><a class="duration-300 hover:text-clr_primary_5" href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="brand w-fit lg:w-1/2 xl:w-1/3"><img src="/images/logo-black.svg" alt="brand name"></a>
+            <div class="shopping-icon cursor-pointer relative text-2xl"><i class="fas fa-shopping-cart"></i><span class="product-number inline-block text-lg font-bold px-2 absolute -right-1/2 -top-1/2 bg-clr_primary_5 rounded-full text-white"></span></div>
+        </div>
+    </header>
+    <div class="title-bar bg-grey mt-2">
+        <div class="container py-10 m-auto px-6">
+            <h1 class="text-3xl font-semibold text-clr_grey_5 tracking-wider">Home / About</h1>
+        </div>
+    </div>
+    <main class="main py-16">
+                <div class="container m-auto px-6">
+                    <h1 class="title w-fit m-auto relative text-4.5xl tracking-wider text-clr_grey_1 font-semibold text-center before:content-[''] before:bg-clr_primary_5 before:absolute before:-left-6 before:rotate-n before:top-4 before:w-0.75 before:h-3/5">Our History</h1>
+                    <p class="pt-6 text-clr_grey_5 max-w-screen-md leading-loose mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat accusantium sapiente tempora sed dolore esse deserunt eaque excepturi, delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque dolore, obcaecati incidunt sequi blanditiis est exercitationem molestiae delectus saepe odio eligendi modi porro eaque in libero minus unde sapiente consectetur architecto. Ullam rerum, nemo iste ex, eaque perspiciatis nisi, eum totam velit saepe sed quos similique amet. Ex, voluptate accusamus nesciunt totam vitae esse iste.</p>
+                </div>
+    </main>
+   <script src="src/about.js" type="module"></script>
+</body>
+</html>
